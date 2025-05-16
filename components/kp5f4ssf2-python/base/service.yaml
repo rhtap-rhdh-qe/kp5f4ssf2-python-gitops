@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: kp5f4ssf2-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: kp5f4ssf2-python 
+  name: kp5f4ssf2-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: kp5f4ssf2-python 
